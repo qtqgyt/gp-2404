@@ -1,8 +1,9 @@
-image: ubuntu:24.04
+image:
+  file: Dockerfile
 
 tasks:
   - init: |
-      sudo apt-get update && sudo apt install git
+      sudo apt-get update
   - command: |
       echo "Workspace is ready!"
 
